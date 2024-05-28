@@ -15,7 +15,7 @@ function App() {
         <Route path="/cadastrar-ponto-de-recarga"
           element={<ChargingPointRegistration />} />
         <Route path="/detalhes-ponto-recarga" element={<ChargingPointDetails />} />
-        <Route path="/editar-ponto-de-recarga" element={<ChargingPointEdit />} />
+        <Route path="/editar-ponto-recarga" element={<ChargingPointEdit />} />
       </Routes>
     </BrowserRouter>
   )

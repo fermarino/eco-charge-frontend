@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ChargingPointEdit.css';
 import ChargingPointImage from '../../images/chargingPoint.svg';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 function ChargingPointEdit() {
   const [chargingPoint, setChargingPoint] = useState({
@@ -11,10 +12,15 @@ function ChargingPointEdit() {
     status: 'available',
   });
 
+  const handleUpdateChargingPoint = () => {
+    console.log('Ponto de recarga atualizado:', chargingPoint);
+    // Adicione a lógica de atualização aqui
+  };
 
   return (
     <div className="wrapper-content">
       <Link to="/" className="back-button">
+        <FontAwesomeIcon icon={faArrowLeft} size="lg" />
         <span className="back-text">Voltar</span>
       </Link>
       <div className="charging-point-edit">
