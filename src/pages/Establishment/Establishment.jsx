@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './EstablishmentRegistration.css';
+import './Establishment.css';
 import ChargingPointImage from '../../images/chargingPoint.svg';
 import Establishment from '../../images/estabelecimento.svg';
+import Button from '../../components/Button/Button'
+import EstablishmentIcon from '../../components/EstablishmentIcon/EstablishmentIcon';
 
 function EstablishmentRegistration() {
   return (
     <div className="wrapper-container">
       <div className="establishment-registration">
         <div className="header-icon">
-          <img src={Establishment} alt="Ponto de Recarga" width="100" height="100" />
+        <EstablishmentIcon src={Establishment} alt="Establishment Icon" width="100" height="100" />
         </div>
         <h2>Cafeteria Paço Alfandega</h2>
         <div className="info">
@@ -56,10 +58,7 @@ function EstablishmentRegistration() {
             </div>
           </Link>
         </div>
-        <Link to="/cadastrar-ponto-de-recarga">
-          <button className="add-button-mobile">+</button>
-          <button className="add-button">Adicionar</button>
-        </Link>
+        <Button to="/cadastrar-ponto-de-recarga" mobileText="+" desktopText="Adicionar" />
       </div>
     </div>
   );

@@ -1,0 +1,26 @@
+/* src/components/BackButton/BackButton.css */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px; 
+}
+
+.back-button .back-text {
+  display: none;
+  margin-left: 10px;
+}
+
+.back-button:hover {
+  color: #0056b3; 
+}
+
+@media (min-width: 768px) {
+  .back-button .back-text {
+    display: inline;
+  }
+}
